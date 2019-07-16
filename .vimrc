@@ -44,14 +44,14 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-set runtimepath+=~/.vim_runtime
+set runtimepath+=~/.vim
 
-source ~/.vim_runtime/vimrcs/basic.vim
-source ~/.vim_runtime/vimrcs/filetypes.vim
-source ~/.vim_runtime/vimrcs/plugins_config.vim
-source ~/.vim_runtime/vimrcs/extended.vim
+source ~/.vim/vimrcs/basic.vim
+source ~/.vim/vimrcs/filetypes.vim
+source ~/.vim/vimrcs/plugins_config.vim
+source ~/.vim/vimrcs/extended.vim
 
 try
-source ~/.vim_runtime/my_configs.vim
+source ~/.vim/my_configs.vim
 catch
 endtry
