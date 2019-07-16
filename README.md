@@ -1,6 +1,6 @@
 # SBSKVimrc
 
-##Reference:
+Reference:
 
 **A Good Vimrc:** https://dougblack.io/words/a-good-vimrc.html
 
@@ -11,6 +11,6 @@
 **Another useful .vimrc file**:
 https://github.com/amix/vimrc
 
-###Useful Vim Tips 1
+#Useful Vim Tips 1
 
 http://vimdoc.sourceforge.net/htmldoc/change.html
