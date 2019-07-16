@@ -10,3 +10,7 @@
 
 **Another useful .vimrc file**:
 https://github.com/amix/vimrc
+
+###Useful Vim Tips 1
+
+http://vimdoc.sourceforge.net/htmldoc/change.html
