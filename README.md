@@ -14,3 +14,7 @@ https://github.com/amix/vimrc
 ***Useful Vim Tips 1***
 
 http://vimdoc.sourceforge.net/htmldoc/change.html
+
+<h2>Some Recommended Hacks</h2>
+<p><strong>HTML tag matching</strong>: https://www.vim.org/scripts/script.php?script_id=3818</p>
+
