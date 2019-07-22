@@ -67,6 +67,41 @@ else
     let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
 
+" Insert newline without entering insert mode
+nmap <S-Enter> O<Esc>j
+nmap <CR> o<Esc>k
+
+" Tabnew shortcut
+nnoremap th  :tabfirst<CR>
+nnoremap tk  :tabnext<CR>
+nnoremap tj  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tt  :tabedit<Space>
+nnoremap tn  :tabnext<Space>
+nnoremap tm  :tabm<Space>
+nnoremap td  :tabclose<CR>
+nnoremap tc  :tabnew<CR>
+" Alternatively use
+"nnoremap th :tabnext<CR>
+"nnoremap tl :tabprev<CR>
+"nnoremap tn :tabnew<CR>
+
+" Bookmark delete function
+function! Delmarks()
+    let l:m = join(filter(
+       \ map(range(char2nr('a'), char2nr('z')), 'nr2char(v:val)'),
+       \ 'line("''".v:val) == line(".")'))
+    if !empty(l:m)
+        exe 'delmarks' l:m
+    endif
+endfunction
+
+nnoremap <silent> dm :<c-u>call Delmarks()<cr>
+
+" Window resizing
+nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
+
 augroup configgroup
     autocmd!
     autocmd VimEnter * highlight clear SignColumn
